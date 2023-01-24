@@ -1,31 +1,21 @@
 {
-  "name": "@json-schema-form/core",
+  "name": "tree",
   "license": "MIT",
   "version": "0.1.0",
   "type": "module",
   "exports": {
     ".": "./src/index.ts"
   },
-  "scripts": {
-    "prepack": "rm -rf ./dist && tsc",
-    "lint": "eslint ./src"
-  },
   "dependencies": {
-    "core-js": "^3.27.2",
-    "futil": "^1.72.0",
     "lodash": "^4.17.21"
   },
-  "peerDependencies": {
-    "mobx": "^6.7.0"
-  },
   "devDependencies": {
-    "@flex-development/toggle-pkg-type": "^1.0.1",
     "@types/lodash": "^4.14.191",
     "@typescript-eslint/eslint-plugin": "^5.51.0",
     "@typescript-eslint/parser": "^5.51.0",
-    "esbuild": "^0.17.7",
     "eslint": "^8.34.0",
-    "glob": "^8.1.0",
+    "eslint-import-resolver-typescript": "^3.5.3",
+    "eslint-plugin-import": "^2.27.5",
     "prettier": "^2.8.4",
     "typescript": "beta",
     "vitest": "^0.28.4"

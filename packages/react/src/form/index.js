@@ -6,6 +6,8 @@ import { removeBlankLeaves } from "../futil.js"
 import { getSchemaControl } from "./controls/index.js"
 
 const onFieldAdd = (schema) => {
+  schema.field.id = _.uniqueId()
+
   if (
     _.isUndefined(schema.title) &&
     schema.field.parentSchema?.type !== "array"

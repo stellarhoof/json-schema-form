@@ -4,7 +4,7 @@ import { observer } from "mobx-react-lite"
 import { chakra, Grid, Heading, Box, Checkbox } from "@chakra-ui/react"
 import { Form } from "./form/Form.jsx"
 import { createFormSchema } from "./form/index.js"
-import { getFlatSchemaValue, getFlatSchema } from "@json-schema-form/core"
+import { reduceSchema } from "@json-schema-form/core"
 
 const schema = {
   type: "object",
@@ -13,7 +13,9 @@ const schema = {
   properties: {
     scalarArray: {
       type: "array",
-      items: { type: "string" },
+      items: {
+        type: "string",
+      },
     },
     arr: {
       type: "array",
@@ -57,26 +59,6 @@ const value = {
   obj: { zebra: "Neiighhh!", lion: "Roar!", giraffe: "Who knows?" },
 }
 
-// const value = { arr: [{ foo: "foo" }], obj: { foo: "this" } }
-
-// const schema = {
-//   type: "array",
-//   items: {
-//     type: "object",
-//     required: ["foo"],
-//     properties: {
-//       foo: { type: "string" },
-//       bar: { type: "string" },
-//     },
-//   },
-// }
-
-// const value = [{ foo: "foo" }]
-
-// const schema = { type: "string" }
-
-// const value = "foo"
-
 const flags = ["readonly", "required", "disabled", "hidden"]
 
 const Flags = ({ schema }) => (
@@ -106,20 +88,20 @@ const Flags = ({ schema }) => (
           ))}
         </React.Fragment>
       ),
-      getFlatSchema(schema)
+      reduceSchema(_.identity, schema)
     )}
   </Grid>
 )
 
-const SchemaValue = observer(({ schema }) =>
-  JSON.stringify(getFlatSchemaValue(schema), null, 2)
+const SchemaFormData = observer(({ schema }) =>
+  JSON.stringify(schema.field.formData, null, 2)
 )
 
 const SchemaErrors = observer(({ schema }) =>
   JSON.stringify(
     _.mapValues(
       (schema) => schema.field.validationMessage,
-      getFlatSchema(schema)
+      reduceSchema(_.identity, schema)
     ),
     null,
     2
@@ -142,8 +124,8 @@ export const App = () => (
     <Form schema={formSchema} submit={submits.error} sx={{ w: "30vw" }} />
     <Grid sx={{ gridTemplateColumns: "1fr 1fr" }}>
       <Box sx={{ fontFamily: "monospace", whiteSpace: "pre-wrap" }}>
-        <Heading>Value</Heading>
-        <SchemaValue schema={formSchema} />
+        <Heading>Form Data</Heading>
+        <SchemaFormData schema={formSchema} />
       </Box>
       <Box sx={{ fontFamily: "monospace", whiteSpace: "pre-wrap" }}>
         <Heading>Errors</Heading>

@@ -1,3 +1,7 @@
+# Typescript dual packages nightmare
+
+https://github.com/microsoft/TypeScript/issues/50466
+
 # TODO
 
 - Support for `dependentRequired`, `dependentSchemas`

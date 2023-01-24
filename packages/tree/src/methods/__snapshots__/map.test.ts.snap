@@ -1,0 +1,189 @@
+// Vitest Snapshot v1
+
+exports[`tree:'TreeOfStrings' visit:'Any' traversal:'PostOrder' 1`] = `
+{
+  "key": "added[object]",
+  "planets": [
+    "Aldeeran added[string]",
+    {
+      "key": "added[object]",
+      "name": "Tatooine added[string]",
+    },
+    "added[array]",
+  ],
+  "title": "The Empire Strikes Back added[string]",
+}
+`;
+
+exports[`tree:'TreeOfStrings' visit:'Any' traversal:'PreOrder' 1`] = `
+{
+  "key": "added[object] added[string]",
+  "planets": [
+    "Aldeeran added[string]",
+    {
+      "key": "added[object] added[string]",
+      "name": "Tatooine added[string]",
+    },
+    "added[array] added[string]",
+  ],
+  "title": "The Empire Strikes Back added[string]",
+}
+`;
+
+exports[`tree:'TreeOfStrings' visit:'Leaf' traversal:'PostOrder' 1`] = `
+{
+  "planets": [
+    "Aldeeran added[string]",
+    {
+      "name": "Tatooine added[string]",
+    },
+  ],
+  "title": "The Empire Strikes Back added[string]",
+}
+`;
+
+exports[`tree:'TreeOfStrings' visit:'Leaf' traversal:'PreOrder' 1`] = `
+{
+  "planets": [
+    "Aldeeran added[string]",
+    {
+      "name": "Tatooine added[string]",
+    },
+  ],
+  "title": "The Empire Strikes Back added[string]",
+}
+`;
+
+exports[`tree:'TreeOfStrings' visit:'Tree' traversal:'PostOrder' 1`] = `
+{
+  "key": "added[object]",
+  "planets": [
+    "Aldeeran",
+    {
+      "key": "added[object]",
+      "name": "Tatooine",
+    },
+    "added[array]",
+  ],
+  "title": "The Empire Strikes Back",
+}
+`;
+
+exports[`tree:'TreeOfStrings' visit:'Tree' traversal:'PreOrder' 1`] = `
+{
+  "key": "added[object]",
+  "planets": [
+    "Aldeeran",
+    {
+      "key": "added[object]",
+      "name": "Tatooine",
+    },
+    "added[array]",
+  ],
+  "title": "The Empire Strikes Back",
+}
+`;
+
+exports[`tree:'TreeOfCollections' visit:'Any' traversal:'PostOrder' 1`] = `
+{
+  "children": [
+    {
+      "films": [
+        {
+          "title": "A New Hope",
+        },
+      ],
+      "key": "added[object]",
+      "name": "Luke Skywalker",
+    },
+  ],
+  "key": "added[object]",
+  "name": "Anakin Skywalker",
+}
+`;
+
+exports[`tree:'TreeOfCollections' visit:'Any' traversal:'PreOrder' 1`] = `
+{
+  "children": [
+    {
+      "films": [
+        {
+          "title": "A New Hope",
+        },
+      ],
+      "key": "added[object]",
+      "name": "Luke Skywalker",
+    },
+  ],
+  "key": "added[object]",
+  "name": "Anakin Skywalker",
+}
+`;
+
+exports[`tree:'TreeOfCollections' visit:'Leaf' traversal:'PostOrder' 1`] = `
+{
+  "children": [
+    {
+      "films": [
+        {
+          "title": "A New Hope",
+        },
+      ],
+      "key": "added[object]",
+      "name": "Luke Skywalker",
+    },
+  ],
+  "name": "Anakin Skywalker",
+}
+`;
+
+exports[`tree:'TreeOfCollections' visit:'Leaf' traversal:'PreOrder' 1`] = `
+{
+  "children": [
+    {
+      "films": [
+        {
+          "title": "A New Hope",
+        },
+      ],
+      "key": "added[object]",
+      "name": "Luke Skywalker",
+    },
+  ],
+  "name": "Anakin Skywalker",
+}
+`;
+
+exports[`tree:'TreeOfCollections' visit:'Tree' traversal:'PostOrder' 1`] = `
+{
+  "children": [
+    {
+      "films": [
+        {
+          "title": "A New Hope",
+        },
+      ],
+      "name": "Luke Skywalker",
+    },
+  ],
+  "key": "added[object]",
+  "name": "Anakin Skywalker",
+}
+`;
+
+exports[`tree:'TreeOfCollections' visit:'Tree' traversal:'PreOrder' 1`] = `
+{
+  "children": [
+    {
+      "films": [
+        {
+          "title": "A New Hope",
+        },
+      ],
+      "name": "Luke Skywalker",
+    },
+  ],
+  "key": "added[object]",
+  "name": "Anakin Skywalker",
+}
+`;

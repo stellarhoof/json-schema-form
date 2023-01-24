@@ -1,0 +1,1197 @@
+// Vitest Snapshot v1
+
+exports[`tree:'SimpleTree' visit:'Any' traversal:'PostOrder' 1`] = `
+[
+  {
+    "context": {
+      "depth": 1,
+      "parents": [
+        {
+          "John": "value",
+          "Snow": {
+            "Padma": [
+              "value",
+            ],
+            "Samba": [
+              "value",
+            ],
+          },
+        },
+      ],
+      "parentsKeys": [
+        "",
+      ],
+    },
+    "key": "John",
+    "node": "value",
+  },
+  {
+    "context": {
+      "depth": 3,
+      "parents": [
+        [
+          "value",
+        ],
+        {
+          "Padma": [
+            "value",
+          ],
+          "Samba": [
+            "value",
+          ],
+        },
+        {
+          "John": "value",
+          "Snow": {
+            "Padma": [
+              "value",
+            ],
+            "Samba": [
+              "value",
+            ],
+          },
+        },
+      ],
+      "parentsKeys": [
+        "Padma",
+        "Snow",
+        "",
+      ],
+    },
+    "key": 0,
+    "node": "value",
+  },
+  {
+    "context": {
+      "depth": 2,
+      "parents": [
+        {
+          "Padma": [
+            "value",
+          ],
+          "Samba": [
+            "value",
+          ],
+        },
+        {
+          "John": "value",
+          "Snow": {
+            "Padma": [
+              "value",
+            ],
+            "Samba": [
+              "value",
+            ],
+          },
+        },
+      ],
+      "parentsKeys": [
+        "Snow",
+        "",
+      ],
+    },
+    "key": "Padma",
+    "node": [
+      "value",
+    ],
+  },
+  {
+    "context": {
+      "depth": 3,
+      "parents": [
+        [
+          "value",
+        ],
+        {
+          "Padma": [
+            "value",
+          ],
+          "Samba": [
+            "value",
+          ],
+        },
+        {
+          "John": "value",
+          "Snow": {
+            "Padma": [
+              "value",
+            ],
+            "Samba": [
+              "value",
+            ],
+          },
+        },
+      ],
+      "parentsKeys": [
+        "Samba",
+        "Snow",
+        "",
+      ],
+    },
+    "key": 0,
+    "node": "value",
+  },
+  {
+    "context": {
+      "depth": 2,
+      "parents": [
+        {
+          "Padma": [
+            "value",
+          ],
+          "Samba": [
+            "value",
+          ],
+        },
+        {
+          "John": "value",
+          "Snow": {
+            "Padma": [
+              "value",
+            ],
+            "Samba": [
+              "value",
+            ],
+          },
+        },
+      ],
+      "parentsKeys": [
+        "Snow",
+        "",
+      ],
+    },
+    "key": "Samba",
+    "node": [
+      "value",
+    ],
+  },
+  {
+    "context": {
+      "depth": 1,
+      "parents": [
+        {
+          "John": "value",
+          "Snow": {
+            "Padma": [
+              "value",
+            ],
+            "Samba": [
+              "value",
+            ],
+          },
+        },
+      ],
+      "parentsKeys": [
+        "",
+      ],
+    },
+    "key": "Snow",
+    "node": {
+      "Padma": [
+        "value",
+      ],
+      "Samba": [
+        "value",
+      ],
+    },
+  },
+  {
+    "context": {
+      "depth": 0,
+      "parents": [],
+      "parentsKeys": [],
+    },
+    "key": "",
+    "node": {
+      "John": "value",
+      "Snow": {
+        "Padma": [
+          "value",
+        ],
+        "Samba": [
+          "value",
+        ],
+      },
+    },
+  },
+]
+`;
+
+exports[`tree:'SimpleTree' visit:'Any' traversal:'PreOrder' 1`] = `
+[
+  {
+    "context": {
+      "depth": 0,
+      "parents": [],
+      "parentsKeys": [],
+    },
+    "key": "",
+    "node": {
+      "John": "value",
+      "Snow": {
+        "Padma": [
+          "value",
+        ],
+        "Samba": [
+          "value",
+        ],
+      },
+    },
+  },
+  {
+    "context": {
+      "depth": 1,
+      "parents": [
+        {
+          "John": "value",
+          "Snow": {
+            "Padma": [
+              "value",
+            ],
+            "Samba": [
+              "value",
+            ],
+          },
+        },
+      ],
+      "parentsKeys": [
+        "",
+      ],
+    },
+    "key": "John",
+    "node": "value",
+  },
+  {
+    "context": {
+      "depth": 1,
+      "parents": [
+        {
+          "John": "value",
+          "Snow": {
+            "Padma": [
+              "value",
+            ],
+            "Samba": [
+              "value",
+            ],
+          },
+        },
+      ],
+      "parentsKeys": [
+        "",
+      ],
+    },
+    "key": "Snow",
+    "node": {
+      "Padma": [
+        "value",
+      ],
+      "Samba": [
+        "value",
+      ],
+    },
+  },
+  {
+    "context": {
+      "depth": 2,
+      "parents": [
+        {
+          "Padma": [
+            "value",
+          ],
+          "Samba": [
+            "value",
+          ],
+        },
+        {
+          "John": "value",
+          "Snow": {
+            "Padma": [
+              "value",
+            ],
+            "Samba": [
+              "value",
+            ],
+          },
+        },
+      ],
+      "parentsKeys": [
+        "Snow",
+        "",
+      ],
+    },
+    "key": "Padma",
+    "node": [
+      "value",
+    ],
+  },
+  {
+    "context": {
+      "depth": 3,
+      "parents": [
+        [
+          "value",
+        ],
+        {
+          "Padma": [
+            "value",
+          ],
+          "Samba": [
+            "value",
+          ],
+        },
+        {
+          "John": "value",
+          "Snow": {
+            "Padma": [
+              "value",
+            ],
+            "Samba": [
+              "value",
+            ],
+          },
+        },
+      ],
+      "parentsKeys": [
+        "Padma",
+        "Snow",
+        "",
+      ],
+    },
+    "key": 0,
+    "node": "value",
+  },
+  {
+    "context": {
+      "depth": 2,
+      "parents": [
+        {
+          "Padma": [
+            "value",
+          ],
+          "Samba": [
+            "value",
+          ],
+        },
+        {
+          "John": "value",
+          "Snow": {
+            "Padma": [
+              "value",
+            ],
+            "Samba": [
+              "value",
+            ],
+          },
+        },
+      ],
+      "parentsKeys": [
+        "Snow",
+        "",
+      ],
+    },
+    "key": "Samba",
+    "node": [
+      "value",
+    ],
+  },
+  {
+    "context": {
+      "depth": 3,
+      "parents": [
+        [
+          "value",
+        ],
+        {
+          "Padma": [
+            "value",
+          ],
+          "Samba": [
+            "value",
+          ],
+        },
+        {
+          "John": "value",
+          "Snow": {
+            "Padma": [
+              "value",
+            ],
+            "Samba": [
+              "value",
+            ],
+          },
+        },
+      ],
+      "parentsKeys": [
+        "Samba",
+        "Snow",
+        "",
+      ],
+    },
+    "key": 0,
+    "node": "value",
+  },
+]
+`;
+
+exports[`tree:'SimpleTree' visit:'Leaf' traversal:'PostOrder' 1`] = `
+[
+  {
+    "context": {
+      "depth": 1,
+      "parents": [
+        {
+          "John": "value",
+          "Snow": {
+            "Padma": [
+              "value",
+            ],
+            "Samba": [
+              "value",
+            ],
+          },
+        },
+      ],
+      "parentsKeys": [
+        "",
+      ],
+    },
+    "key": "John",
+    "node": "value",
+  },
+  {
+    "context": {
+      "depth": 3,
+      "parents": [
+        [
+          "value",
+        ],
+        {
+          "Padma": [
+            "value",
+          ],
+          "Samba": [
+            "value",
+          ],
+        },
+        {
+          "John": "value",
+          "Snow": {
+            "Padma": [
+              "value",
+            ],
+            "Samba": [
+              "value",
+            ],
+          },
+        },
+      ],
+      "parentsKeys": [
+        "Padma",
+        "Snow",
+        "",
+      ],
+    },
+    "key": 0,
+    "node": "value",
+  },
+  {
+    "context": {
+      "depth": 3,
+      "parents": [
+        [
+          "value",
+        ],
+        {
+          "Padma": [
+            "value",
+          ],
+          "Samba": [
+            "value",
+          ],
+        },
+        {
+          "John": "value",
+          "Snow": {
+            "Padma": [
+              "value",
+            ],
+            "Samba": [
+              "value",
+            ],
+          },
+        },
+      ],
+      "parentsKeys": [
+        "Samba",
+        "Snow",
+        "",
+      ],
+    },
+    "key": 0,
+    "node": "value",
+  },
+]
+`;
+
+exports[`tree:'SimpleTree' visit:'Leaf' traversal:'PreOrder' 1`] = `
+[
+  {
+    "context": {
+      "depth": 1,
+      "parents": [
+        {
+          "John": "value",
+          "Snow": {
+            "Padma": [
+              "value",
+            ],
+            "Samba": [
+              "value",
+            ],
+          },
+        },
+      ],
+      "parentsKeys": [
+        "",
+      ],
+    },
+    "key": "John",
+    "node": "value",
+  },
+  {
+    "context": {
+      "depth": 3,
+      "parents": [
+        [
+          "value",
+        ],
+        {
+          "Padma": [
+            "value",
+          ],
+          "Samba": [
+            "value",
+          ],
+        },
+        {
+          "John": "value",
+          "Snow": {
+            "Padma": [
+              "value",
+            ],
+            "Samba": [
+              "value",
+            ],
+          },
+        },
+      ],
+      "parentsKeys": [
+        "Padma",
+        "Snow",
+        "",
+      ],
+    },
+    "key": 0,
+    "node": "value",
+  },
+  {
+    "context": {
+      "depth": 3,
+      "parents": [
+        [
+          "value",
+        ],
+        {
+          "Padma": [
+            "value",
+          ],
+          "Samba": [
+            "value",
+          ],
+        },
+        {
+          "John": "value",
+          "Snow": {
+            "Padma": [
+              "value",
+            ],
+            "Samba": [
+              "value",
+            ],
+          },
+        },
+      ],
+      "parentsKeys": [
+        "Samba",
+        "Snow",
+        "",
+      ],
+    },
+    "key": 0,
+    "node": "value",
+  },
+]
+`;
+
+exports[`tree:'SimpleTree' visit:'Tree' traversal:'PostOrder' 1`] = `
+[
+  {
+    "context": {
+      "depth": 2,
+      "parents": [
+        {
+          "Padma": [
+            "value",
+          ],
+          "Samba": [
+            "value",
+          ],
+        },
+        {
+          "John": "value",
+          "Snow": {
+            "Padma": [
+              "value",
+            ],
+            "Samba": [
+              "value",
+            ],
+          },
+        },
+      ],
+      "parentsKeys": [
+        "Snow",
+        "",
+      ],
+    },
+    "key": "Padma",
+    "node": [
+      "value",
+    ],
+  },
+  {
+    "context": {
+      "depth": 2,
+      "parents": [
+        {
+          "Padma": [
+            "value",
+          ],
+          "Samba": [
+            "value",
+          ],
+        },
+        {
+          "John": "value",
+          "Snow": {
+            "Padma": [
+              "value",
+            ],
+            "Samba": [
+              "value",
+            ],
+          },
+        },
+      ],
+      "parentsKeys": [
+        "Snow",
+        "",
+      ],
+    },
+    "key": "Samba",
+    "node": [
+      "value",
+    ],
+  },
+  {
+    "context": {
+      "depth": 1,
+      "parents": [
+        {
+          "John": "value",
+          "Snow": {
+            "Padma": [
+              "value",
+            ],
+            "Samba": [
+              "value",
+            ],
+          },
+        },
+      ],
+      "parentsKeys": [
+        "",
+      ],
+    },
+    "key": "Snow",
+    "node": {
+      "Padma": [
+        "value",
+      ],
+      "Samba": [
+        "value",
+      ],
+    },
+  },
+  {
+    "context": {
+      "depth": 0,
+      "parents": [],
+      "parentsKeys": [],
+    },
+    "key": "",
+    "node": {
+      "John": "value",
+      "Snow": {
+        "Padma": [
+          "value",
+        ],
+        "Samba": [
+          "value",
+        ],
+      },
+    },
+  },
+]
+`;
+
+exports[`tree:'SimpleTree' visit:'Tree' traversal:'PreOrder' 1`] = `
+[
+  {
+    "context": {
+      "depth": 0,
+      "parents": [],
+      "parentsKeys": [],
+    },
+    "key": "",
+    "node": {
+      "John": "value",
+      "Snow": {
+        "Padma": [
+          "value",
+        ],
+        "Samba": [
+          "value",
+        ],
+      },
+    },
+  },
+  {
+    "context": {
+      "depth": 1,
+      "parents": [
+        {
+          "John": "value",
+          "Snow": {
+            "Padma": [
+              "value",
+            ],
+            "Samba": [
+              "value",
+            ],
+          },
+        },
+      ],
+      "parentsKeys": [
+        "",
+      ],
+    },
+    "key": "Snow",
+    "node": {
+      "Padma": [
+        "value",
+      ],
+      "Samba": [
+        "value",
+      ],
+    },
+  },
+  {
+    "context": {
+      "depth": 2,
+      "parents": [
+        {
+          "Padma": [
+            "value",
+          ],
+          "Samba": [
+            "value",
+          ],
+        },
+        {
+          "John": "value",
+          "Snow": {
+            "Padma": [
+              "value",
+            ],
+            "Samba": [
+              "value",
+            ],
+          },
+        },
+      ],
+      "parentsKeys": [
+        "Snow",
+        "",
+      ],
+    },
+    "key": "Padma",
+    "node": [
+      "value",
+    ],
+  },
+  {
+    "context": {
+      "depth": 2,
+      "parents": [
+        {
+          "Padma": [
+            "value",
+          ],
+          "Samba": [
+            "value",
+          ],
+        },
+        {
+          "John": "value",
+          "Snow": {
+            "Padma": [
+              "value",
+            ],
+            "Samba": [
+              "value",
+            ],
+          },
+        },
+      ],
+      "parentsKeys": [
+        "Snow",
+        "",
+      ],
+    },
+    "key": "Samba",
+    "node": [
+      "value",
+    ],
+  },
+]
+`;
+
+exports[`tree:'TreeWithChildrenKey' visit:'Any' traversal:'PostOrder' 1`] = `
+[
+  {
+    "context": {
+      "depth": 1,
+      "parents": [
+        {
+          "John": "value",
+          "Snow": "value",
+          "children": {
+            "First": {
+              "Padma": "value",
+            },
+            "Second": {
+              "Samba": "value",
+            },
+          },
+        },
+      ],
+      "parentsKeys": [
+        "",
+      ],
+    },
+    "key": "First",
+    "node": {
+      "Padma": "value",
+    },
+  },
+  {
+    "context": {
+      "depth": 1,
+      "parents": [
+        {
+          "John": "value",
+          "Snow": "value",
+          "children": {
+            "First": {
+              "Padma": "value",
+            },
+            "Second": {
+              "Samba": "value",
+            },
+          },
+        },
+      ],
+      "parentsKeys": [
+        "",
+      ],
+    },
+    "key": "Second",
+    "node": {
+      "Samba": "value",
+    },
+  },
+  {
+    "context": {
+      "depth": 0,
+      "parents": [],
+      "parentsKeys": [],
+    },
+    "key": "",
+    "node": {
+      "John": "value",
+      "Snow": "value",
+      "children": {
+        "First": {
+          "Padma": "value",
+        },
+        "Second": {
+          "Samba": "value",
+        },
+      },
+    },
+  },
+]
+`;
+
+exports[`tree:'TreeWithChildrenKey' visit:'Any' traversal:'PreOrder' 1`] = `
+[
+  {
+    "context": {
+      "depth": 0,
+      "parents": [],
+      "parentsKeys": [],
+    },
+    "key": "",
+    "node": {
+      "John": "value",
+      "Snow": "value",
+      "children": {
+        "First": {
+          "Padma": "value",
+        },
+        "Second": {
+          "Samba": "value",
+        },
+      },
+    },
+  },
+  {
+    "context": {
+      "depth": 1,
+      "parents": [
+        {
+          "John": "value",
+          "Snow": "value",
+          "children": {
+            "First": {
+              "Padma": "value",
+            },
+            "Second": {
+              "Samba": "value",
+            },
+          },
+        },
+      ],
+      "parentsKeys": [
+        "",
+      ],
+    },
+    "key": "First",
+    "node": {
+      "Padma": "value",
+    },
+  },
+  {
+    "context": {
+      "depth": 1,
+      "parents": [
+        {
+          "John": "value",
+          "Snow": "value",
+          "children": {
+            "First": {
+              "Padma": "value",
+            },
+            "Second": {
+              "Samba": "value",
+            },
+          },
+        },
+      ],
+      "parentsKeys": [
+        "",
+      ],
+    },
+    "key": "Second",
+    "node": {
+      "Samba": "value",
+    },
+  },
+]
+`;
+
+exports[`tree:'TreeWithChildrenKey' visit:'Leaf' traversal:'PostOrder' 1`] = `
+[
+  {
+    "context": {
+      "depth": 1,
+      "parents": [
+        {
+          "John": "value",
+          "Snow": "value",
+          "children": {
+            "First": {
+              "Padma": "value",
+            },
+            "Second": {
+              "Samba": "value",
+            },
+          },
+        },
+      ],
+      "parentsKeys": [
+        "",
+      ],
+    },
+    "key": "First",
+    "node": {
+      "Padma": "value",
+    },
+  },
+  {
+    "context": {
+      "depth": 1,
+      "parents": [
+        {
+          "John": "value",
+          "Snow": "value",
+          "children": {
+            "First": {
+              "Padma": "value",
+            },
+            "Second": {
+              "Samba": "value",
+            },
+          },
+        },
+      ],
+      "parentsKeys": [
+        "",
+      ],
+    },
+    "key": "Second",
+    "node": {
+      "Samba": "value",
+    },
+  },
+]
+`;
+
+exports[`tree:'TreeWithChildrenKey' visit:'Leaf' traversal:'PreOrder' 1`] = `
+[
+  {
+    "context": {
+      "depth": 1,
+      "parents": [
+        {
+          "John": "value",
+          "Snow": "value",
+          "children": {
+            "First": {
+              "Padma": "value",
+            },
+            "Second": {
+              "Samba": "value",
+            },
+          },
+        },
+      ],
+      "parentsKeys": [
+        "",
+      ],
+    },
+    "key": "First",
+    "node": {
+      "Padma": "value",
+    },
+  },
+  {
+    "context": {
+      "depth": 1,
+      "parents": [
+        {
+          "John": "value",
+          "Snow": "value",
+          "children": {
+            "First": {
+              "Padma": "value",
+            },
+            "Second": {
+              "Samba": "value",
+            },
+          },
+        },
+      ],
+      "parentsKeys": [
+        "",
+      ],
+    },
+    "key": "Second",
+    "node": {
+      "Samba": "value",
+    },
+  },
+]
+`;
+
+exports[`tree:'TreeWithChildrenKey' visit:'Tree' traversal:'PostOrder' 1`] = `
+[
+  {
+    "context": {
+      "depth": 0,
+      "parents": [],
+      "parentsKeys": [],
+    },
+    "key": "",
+    "node": {
+      "John": "value",
+      "Snow": "value",
+      "children": {
+        "First": {
+          "Padma": "value",
+        },
+        "Second": {
+          "Samba": "value",
+        },
+      },
+    },
+  },
+]
+`;
+
+exports[`tree:'TreeWithChildrenKey' visit:'Tree' traversal:'PreOrder' 1`] = `
+[
+  {
+    "context": {
+      "depth": 0,
+      "parents": [],
+      "parentsKeys": [],
+    },
+    "key": "",
+    "node": {
+      "John": "value",
+      "Snow": "value",
+      "children": {
+        "First": {
+          "Padma": "value",
+        },
+        "Second": {
+          "Samba": "value",
+        },
+      },
+    },
+  },
+]
+`;
